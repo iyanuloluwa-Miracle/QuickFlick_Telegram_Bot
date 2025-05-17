@@ -30,9 +30,9 @@ Check out what we've got cooking so far:
 
 ---
 
-![Movie Magic Screenshot 1](screenshots/screenshot1.jpg)
-![Movie Magic Screenshot 2](screenshots/screenshot2.jpg)
-![Movie Magic Screenshot 3](screenshots/screenshot3.jpg)
+![Movie Magic Screenshot 1](./src/screenshots/screenshot1.jpg)
+![Movie Magic Screenshot 2](./src/screenshots/screenshot2.jpg)
+![Movie Magic Screenshot 3](./src/screenshots/screenshot3.jpg)
 
 > _These screenshots are like movie trailers - the final version will be even better!_
 
