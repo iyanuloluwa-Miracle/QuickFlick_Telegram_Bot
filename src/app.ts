@@ -2,6 +2,7 @@ import { Telegraf } from 'telegraf';
 import dotenv from 'dotenv';
 import { connectToDatabase } from './config/database';
 import { startCommand, latestMoviesCommand, latestSeriesCommand } from './commands';
+import { handleMovieActions } from './commands/latestMoviesCommand';
 import { addSampleData } from './services/movieService';
 
 // Load environment variables
@@ -25,6 +26,9 @@ connectToDatabase()
     bot.start(startCommand);
     bot.command('latest_movies', latestMoviesCommand);
     bot.command('latest_series', latestSeriesCommand);
+    
+    // Register callback handlers for movie actions
+    bot.action(/^(trailer|cast|similar|info|prev_page|next_page)_/, handleMovieActions);
     
     // Set command descriptions for Telegram menu
     bot.telegram.setMyCommands([
