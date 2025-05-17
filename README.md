@@ -1,55 +1,40 @@
-# Movie Series Bot
+# QuickFlick Bot
 
-A Telegram bot that provides information about the latest movies and TV series.
+A Telegram bot to discover the latest movies and TV series, powered by TMDB.
 
 ## Features
+- Fetches the latest movies in theaters directly from TMDB
+- Displays movie posters, release dates, ratings, genres, and overviews
+- Interactive inline buttons for:
+  - Watching trailers
+  - Viewing cast information
+  - Finding similar movies
+  - Getting more detailed info
+- Pagination to browse more movies
+- Friendly error handling and modern UI
 
-- Get the latest movies in theaters
-- Get the latest TV series on air
-- Get popular movies
-- Get popular TV series
-- Detailed movie and series information including ratings, genres, and overviews
-- Interactive command menu for easy navigation
+## Status
+**This repository is a work in progress. More features are being added regularly!**
 
-## Setup
+## Screenshots
+Below are some screenshots of the bot in action. As development continues, more features and improvements will be showcased here.
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd movie-series-bot
-   ```
+---
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+![Screenshot 1](screenshots/screenshot1.jpg)
+![Screenshot 2](screenshots/screenshot2.jpg)
+![Screenshot 3](screenshots/screenshot3.jpg)
 
-3. Create a `.env` file in the root directory and add your Telegram bot token:
-   ```
-   BOT_TOKEN=your_telegram_bot_token
-   ```
+> _Note: The UI and features are evolving. Stay tuned for updates!_
 
-4. Start the bot:
-   ```bash
-   npm start
-   ```
-
-## Usage
-
-- `/start` - Start the bot and see available commands
-- `/latest_movies` - Get the latest movies in theaters
-- `/latest_series` - Get the latest TV series on air
-- `/popular_movies` - Get popular movies
-- `/popular_series` - Get popular TV series
-
-### Example
-
-To get the latest movies, simply send `/latest_movies` to the bot, and it will respond with a list of the latest movies in theaters, including their titles, release dates, ratings, genres, and overviews.
+## Getting Started
+1. Clone the repo
+2. Install dependencies: `npm install`
+3. Set up your `.env` file with your Telegram Bot Token and TMDB API Key
+4. Start the bot: `npm run dev`
 
 ## Contributing
-
-Feel free to submit issues and pull requests. Contributions are welcome!
+Contributions are welcome! Please open an issue or submit a pull request.
 
 ## License
-
-This project is licensed under the MIT License. 
+MIT 
